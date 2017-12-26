@@ -12,6 +12,12 @@ public class Rock : ObjectM
         StartCoroutine(Move(bottomPosition));
         
     }
+
+    protected override void Update()
+    {
+        base.Update();
+    }
+
     IEnumerator Move(Vector3 target)
     {
         while (Mathf.Abs((target - transform.localPosition).y) > 1.0f){
@@ -41,6 +47,7 @@ public class Rock : ObjectM
 //git add .
 //git commit -m "comments"
 //git push
+//get push -f  <---- force push
 //git log  <---- check history
 //git diff <---- check changes
 //git reset --hard head <------ go back to previous version.

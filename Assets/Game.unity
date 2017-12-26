@@ -260,6 +260,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectSpeed: 10
+  resetPosition: -23.5
+  startPosition: 62
   topPosition: {x: 0, y: 10, z: 0}
   bottomPosition: {x: 0, y: 1, z: 0}
 --- !u!1 &218640062 stripped
@@ -278,6 +280,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectSpeed: 10
+  resetPosition: -23.5
+  startPosition: 26
   topPosition: {x: 0, y: 10, z: 0}
   bottomPosition: {x: 0, y: 1, z: 0}
 --- !u!1 &359632776
@@ -442,6 +446,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectSpeed: 20
+  resetPosition: -23.5
+  startPosition: 80
 --- !u!1 &896259689 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1579804187763290, guid: 617865c35e8aa904abdfbbb5e9806456,
@@ -459,6 +465,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectSpeed: 20
+  resetPosition: -23.5
+  startPosition: 80
 --- !u!1 &1053682671 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1579804187763290, guid: 617865c35e8aa904abdfbbb5e9806456,
@@ -476,6 +484,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectSpeed: 20
+  resetPosition: -23.5
+  startPosition: 80
 --- !u!1 &1248375723 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
@@ -492,6 +502,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectSpeed: 10
+  resetPosition: -23.5
+  startPosition: 93
   topPosition: {x: 0, y: 10, z: 0}
   bottomPosition: {x: 0, y: 1, z: 0}
 --- !u!1 &1271932973 stripped
@@ -511,6 +523,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectSpeed: 20
+  resetPosition: -23.5
+  startPosition: 80
 --- !u!1001 &1275140039
 Prefab:
   m_ObjectHideFlags: 0
@@ -620,7 +634,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 36
+      value: 93
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -712,7 +726,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -758,11 +772,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
       propertyPath: m_LocalPosition.z
@@ -899,5 +913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectSpeed: 10
+  resetPosition: -23.5
+  startPosition: 80
   topPosition: {x: 0, y: 10, z: 0}
   bottomPosition: {x: 0, y: 1, z: 0}
