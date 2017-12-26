@@ -2,15 +2,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rock : MonoBehaviour {
+public class Rock : ObjectM
+{
+    [SerializeField] Vector3 topPosition;
+    [SerializeField] Vector3 bottomPosition;
+    // Use this for initializationwait
+    void Start()
+    {
+        StartCoroutine(Move(bottomPosition));
+        
+    }
+    IEnumerator Move(Vector3 target)
+    {
+        while (Mathf.Abs((target - transform.localPosition).y) > 1.0f){
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+            Vector3 direction = target.y == topPosition.y ? Vector3.up : Vector3.down;
+            transform.localPosition += direction * Time.deltaTime;
+
+            yield return null;
+        }
+        print("hit");
+
+        yield return new WaitForSeconds(0.5f);
+
+        Vector3 newTarget = target.y == topPosition.y ? bottomPosition : topPosition;
+
+        StartCoroutine(Move(newTarget));
+    }
+
 }
+
+//notes
+//ctrl+k -> ctrl+c == comment
+//ctrl+k -> ctrl+u == uncomment
+//ctrl+k -> ctrl+d == autoformat
