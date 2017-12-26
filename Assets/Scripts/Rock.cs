@@ -36,3 +36,11 @@ public class Rock : ObjectM
 //ctrl+k -> ctrl+c == comment
 //ctrl+k -> ctrl+u == uncomment
 //ctrl+k -> ctrl+d == autoformat
+
+//git notes
+//git add .
+//git commit -m "comments"
+//git push
+//git log  <---- check history
+//git diff <---- check changes
+//git reset --hard head <------ go back to previous version.
