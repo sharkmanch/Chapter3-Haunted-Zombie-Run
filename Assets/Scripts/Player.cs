@@ -1,28 +1,36 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Player : MonoBehaviour {
+public class Player : MonoBehaviour
+{
     Animator anim;
     [SerializeField] float pushingForce = 50f;
     [SerializeField] float jumpForce = 100f;
+    [SerializeField] private AudioClip sfxJump;
     private Rigidbody rigidBody;
 
     private bool jump = false;
     private bool fly = false;
+    private AudioSource audioSource;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         anim = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody>();
-	}
+        audioSource = GetComponent<AudioSource>();
+    }
 
     // Update is called once per frame
     //no good to use update for games coz it differs from different devices.
 
-    void Update() {
+    void Update()
+    {
 
-        if (Input.GetMouseButtonDown(0)) {
+        if (Input.GetMouseButtonDown(0))
+        {
             anim.Play("jump");
+            audioSource.PlayOneShot(sfxJump);
             rigidBody.useGravity = true;
             jump = true;
         }
@@ -32,19 +40,21 @@ public class Player : MonoBehaviour {
         {
             anim.Play("jump");
             rigidBody.useGravity = true;
+            audioSource.PlayOneShot(sfxJump);
             jump = true;
             fly = true;
         }
         // removable test jump front
     }
 
-    void FixedUpdate(){
-            if (jump == true)
-            {
-                jump = false;
+    void FixedUpdate()
+    {
+        if (jump == true)
+        {
+            jump = false;
             rigidBody.velocity = new Vector2(0, 0);
-                rigidBody.AddForce(new Vector2(0, jumpForce), ForceMode.Impulse);
-            }
+            rigidBody.AddForce(new Vector2(0, jumpForce), ForceMode.Impulse);
+        }
 
 
         //removable test jump front
@@ -57,6 +67,6 @@ public class Player : MonoBehaviour {
         // removable test jump front
 
         print(rigidBody.velocity.y);
-        }
-	}
- 
+    }
+}
+
