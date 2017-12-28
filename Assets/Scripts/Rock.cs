@@ -10,24 +10,28 @@ public class Rock : ObjectM
     void Start()
     {
         StartCoroutine(Move(bottomPosition));
-        
+
     }
 
     protected override void Update()
     {
-        base.Update();
+        if (GameManager.instance.PlayerActive)
+        {
+            base.Update();
+        }
     }
 
     IEnumerator Move(Vector3 target)
     {
-        while (Mathf.Abs((target - transform.localPosition).y) > 1.0f){
+        while (Mathf.Abs((target - transform.localPosition).y) > 1.0f)
+        {
 
             Vector3 direction = target.y == topPosition.y ? Vector3.up : Vector3.down;
             transform.localPosition += direction * Time.deltaTime;
 
             yield return null;
         }
-        print("hit");
+        //print("hit");
 
         yield return new WaitForSeconds(0.5f);
 

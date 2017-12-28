@@ -381,6 +381,10 @@ Prefab:
       propertyPath: m_Name
       value: Rock (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
+      propertyPath: m_TagString
+      value: obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
   m_IsPrefabParent: 0
@@ -508,6 +512,7 @@ GameObject:
   - component: {fileID: 420333685}
   - component: {fileID: 420333684}
   - component: {fileID: 420333688}
+  - component: {fileID: 420333689}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -657,6 +662,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &420333689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 420333683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32b3392ca57f8814981bb1561f5af0f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &569810278
 Prefab:
   m_ObjectHideFlags: 0
@@ -699,6 +715,10 @@ Prefab:
     - target: {fileID: 100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
       propertyPath: m_Name
       value: Rock (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
+      propertyPath: m_TagString
+      value: obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
@@ -905,6 +925,7 @@ MonoBehaviour:
   pushingForce: 50
   jumpForce: 100
   sfxJump: {fileID: 8300000, guid: 183c0eec7d5eb7e48af70470b827ac02, type: 3}
+  sfxDeath: {fileID: 0}
 --- !u!135 &1166596433
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1142,6 +1163,10 @@ Prefab:
       propertyPath: m_Name
       value: Rock (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
+      propertyPath: m_TagString
+      value: obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
   m_IsPrefabParent: 0
@@ -1234,6 +1259,10 @@ Prefab:
       propertyPath: m_Name
       value: Rock (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
+      propertyPath: m_TagString
+      value: obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
   m_IsPrefabParent: 0
@@ -1279,6 +1308,10 @@ Prefab:
     - target: {fileID: 100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
       propertyPath: m_Name
       value: Rock (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
+      propertyPath: m_TagString
+      value: obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
@@ -1372,6 +1405,10 @@ Prefab:
       propertyPath: m_Name
       value: Rock (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
+      propertyPath: m_TagString
+      value: obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
   m_IsPrefabParent: 0
@@ -1418,6 +1455,10 @@ Prefab:
       propertyPath: m_Name
       value: Rock (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
+      propertyPath: m_TagString
+      value: obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
   m_IsPrefabParent: 0
@@ -1463,6 +1504,10 @@ Prefab:
     - target: {fileID: 100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
       propertyPath: m_Name
       value: Rock (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
+      propertyPath: m_TagString
+      value: obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
@@ -1699,6 +1744,10 @@ Prefab:
     - target: {fileID: 100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
       propertyPath: m_Name
       value: Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}
+      propertyPath: m_TagString
+      value: obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0666fe780b198c4fbc70e84beb2c3fa, type: 3}

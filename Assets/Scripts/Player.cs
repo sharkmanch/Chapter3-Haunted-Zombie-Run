@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using UnityEngine;
-
+using UnityEngine.Assertions;
+//Assertions here is needed for debugging 
 public class Player : MonoBehaviour
 {
     Animator anim;
     [SerializeField] float pushingForce = 50f;
     [SerializeField] float jumpForce = 100f;
     [SerializeField] private AudioClip sfxJump;
+    [SerializeField] private AudioClip sfxDeath;
+
     private Rigidbody rigidBody;
 
     private bool jump = false;
@@ -14,6 +17,12 @@ public class Player : MonoBehaviour
     private AudioSource audioSource;
 
     // Use this for initialization
+    void Awake()
+    {
+        Assert.IsNotNull(sfxJump);
+        Assert.IsNotNull(sfxDeath);
+    }
+    // assertion is debug method and isnotNull is to detect if theres sth declared but not applied. It will be shown on console as Error.
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -26,18 +35,22 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-
-        if (Input.GetMouseButtonDown(0))
+        if (!GameManager.instance.GameOver)
         {
-            anim.Play("jump");
-            audioSource.PlayOneShot(sfxJump);
-            rigidBody.useGravity = true;
-            jump = true;
-        }
-
+            if (Input.GetMouseButtonDown(0))
+            {
+                GameManager.instance.PlayerStartedGame();
+                anim.Play("jump");
+                audioSource.PlayOneShot(sfxJump);
+                rigidBody.useGravity = true;
+                jump = true;
+            }
+        
         //removable test jump front
         if (Input.GetMouseButtonDown(1))
         {
+            
+            GameManager.instance.PlayerStartedGame();
             anim.Play("jump");
             rigidBody.useGravity = true;
             audioSource.PlayOneShot(sfxJump);
@@ -45,6 +58,7 @@ public class Player : MonoBehaviour
             fly = true;
         }
         // removable test jump front
+    }
     }
 
     void FixedUpdate()
@@ -66,7 +80,21 @@ public class Player : MonoBehaviour
         }
         // removable test jump front
 
-        print(rigidBody.velocity.y);
+       // print(rigidBody.velocity.y);
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "obstacle")
+        {
+            rigidBody.AddForce(new Vector2(-50, 20), ForceMode.Impulse);
+            rigidBody.detectCollisions = false;
+            // turn the detection back to false so it can detect again after one collision.
+            audioSource.PlayOneShot(sfxDeath);
+
+            GameManager.instance.PlayerCollided();
+            //to stop the map stuff when gameOver is true (written as when gameOver is not true, everything move)
+        }
+        // this is to detect if the colliding object is tagged with "obstacle". 
     }
 }
 
