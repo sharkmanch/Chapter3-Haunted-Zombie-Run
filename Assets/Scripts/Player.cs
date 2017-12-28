@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (!GameManager.instance.GameOver)
+        if (!GameManager.instance.GameOver && GameManager.instance.GameStarted)
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -45,20 +45,20 @@ public class Player : MonoBehaviour
                 rigidBody.useGravity = true;
                 jump = true;
             }
-        
-        //removable test jump front
-        if (Input.GetMouseButtonDown(1))
-        {
-            
-            GameManager.instance.PlayerStartedGame();
-            anim.Play("jump");
-            rigidBody.useGravity = true;
-            audioSource.PlayOneShot(sfxJump);
-            jump = true;
-            fly = true;
+
+            //removable test jump front
+            if (Input.GetMouseButtonDown(1))
+            {
+
+                GameManager.instance.PlayerStartedGame();
+                anim.Play("jump");
+                rigidBody.useGravity = true;
+                audioSource.PlayOneShot(sfxJump);
+                jump = true;
+                fly = true;
+            }
+            // removable test jump front
         }
-        // removable test jump front
-    }
     }
 
     void FixedUpdate()
@@ -80,7 +80,7 @@ public class Player : MonoBehaviour
         }
         // removable test jump front
 
-       // print(rigidBody.velocity.y);
+        // print(rigidBody.velocity.y);
     }
     void OnCollisionEnter(Collision collision)
     {
