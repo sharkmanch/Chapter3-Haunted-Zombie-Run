@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] float jumpForce = 100f;
     [SerializeField] private AudioClip sfxJump;
     [SerializeField] private AudioClip sfxDeath;
+    [SerializeField] private AudioClip sfxCoin;
 
     private Rigidbody rigidBody;
 
@@ -21,6 +22,7 @@ public class Player : MonoBehaviour
     {
         Assert.IsNotNull(sfxJump);
         Assert.IsNotNull(sfxDeath);
+        Assert.IsNotNull(sfxCoin);
     }
     // assertion is debug method and isnotNull is to detect if theres sth declared but not applied. It will be shown on console as Error.
     void Start()
@@ -95,6 +97,14 @@ public class Player : MonoBehaviour
             //to stop the map stuff when gameOver is true (written as when gameOver is not true, everything move)
         }
         // this is to detect if the colliding object is tagged with "obstacle". 
+        if (collision.gameObject.tag == "Coins")
+        {
+            rigidBody.AddForce(new Vector2(0, 0), ForceMode.Impulse);
+            audioSource.PlayOneShot(sfxCoin);
+            rigidBody.detectCollisions = false;
+            // turn the detection back to false so it can detect again after one collision.
+            
+        }
     }
 }
 
