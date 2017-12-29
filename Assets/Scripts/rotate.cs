@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class rotate : MonoBehaviour
 {
-    [SerializeField] private float rotateSpd = 200.0f;
+    [SerializeField] private float rotateRSpd = 200.0f;
+    [SerializeField] private float rotateUSpd = 0.0f;
     // Use this for initialization
     void Start()
     {
@@ -16,7 +17,8 @@ public class rotate : MonoBehaviour
     {
         if (GameManager.instance.PlayerActive)
         {
-            transform.Rotate(Vector3.right * rotateSpd * Time.deltaTime);
+            transform.RotateAround(transform.position, Vector3.up, rotateRSpd * Time.deltaTime);
+            transform.RotateAround(transform.position, Vector3.left, rotateUSpd * Time.deltaTime);
         }
     }
 }

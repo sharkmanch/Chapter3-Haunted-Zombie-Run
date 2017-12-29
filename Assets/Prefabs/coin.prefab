@@ -59,7 +59,8 @@ GameObject:
   - component: {fileID: 4682950120553348}
   - component: {fileID: 114944378269021646}
   - component: {fileID: 135008233441319646}
-  - component: {fileID: 54885341641431090}
+  - component: {fileID: 54692173794532156}
+  - component: {fileID: 82508494430424342}
   m_Layer: 0
   m_Name: coin
   m_TagString: Coins
@@ -190,7 +191,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1391438782968178}
   m_Mesh: {fileID: 4300000, guid: f05163881e330334a89372031c72aa3f, type: 3}
---- !u!54 &54885341641431090
+--- !u!54 &54692173794532156
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -205,6 +206,86 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!82 &82508494430424342
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1677812678815390}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95470784724115048
 Animator:
   serializedVersion: 3
@@ -250,7 +331,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a239ba9587639a40b55fbaa0f097496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpd: 200
+  rotateRSpd: 200
+  rotateUSpd: 0
 --- !u!114 &114120225406921990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -262,7 +344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a239ba9587639a40b55fbaa0f097496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpd: 200
+  rotateRSpd: 200
+  rotateUSpd: 0
 --- !u!114 &114944378269021646
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -277,7 +360,7 @@ MonoBehaviour:
   objectSpeed: 5
   resetPosition: -23.5
   startPosition: 130
-  rotateSpd: 300
+  sfxCoin: {fileID: 8300000, guid: 1eb3a22a0afe79243b17ad38fd1ba1af, type: 3}
 --- !u!135 &135008233441319646
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -285,7 +368,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1677812678815390}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.85
