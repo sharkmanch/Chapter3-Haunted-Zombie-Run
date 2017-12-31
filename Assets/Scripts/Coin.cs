@@ -7,7 +7,7 @@ public class Coin : ObjectM
     private Rigidbody rigidBody;
     private AudioSource audioSource;
     [SerializeField] private AudioClip sfxCoin;
-
+    // [SerializeField] private GameObject theCoin;
 
     // Use this for initialization
     void Start()
@@ -35,6 +35,8 @@ public class Coin : ObjectM
 
             //  rigidBody.AddForce(new Vector2(0, 0), ForceMode.Impulse);
             audioSource.PlayOneShot(sfxCoin);
+            Vector3 newPos = new Vector3(startPosition, transform.position.y, transform.position.z);
+            transform.position = newPos;
             //rigidBody.detectCollisions = false;
             // turn the detection back to false so it can detect again after one collision.
 

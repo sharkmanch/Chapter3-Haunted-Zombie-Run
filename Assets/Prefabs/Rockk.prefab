@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4457721181152294}
-  - component: {fileID: 114792572212491654}
+  - component: {fileID: 114162621755659196}
   m_Layer: 0
   m_Name: Rockk
   m_TagString: Untagged
@@ -160,7 +160,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114792572212491654
+--- !u!114 &114162621755659196
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -173,9 +173,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectSpeed: 5
   resetPosition: -23.5
-  startPosition: 80
-  topPosition: {x: 0, y: 10, z: 0}
-  bottomPosition: {x: 0, y: 1, z: 0}
+  startPosition: 130
+  topPosition: {x: 0, y: 13, z: 0}
+  bottomPosition: {x: 0, y: 8, z: 0}
 --- !u!114 &114984058523395332
 MonoBehaviour:
   m_ObjectHideFlags: 1

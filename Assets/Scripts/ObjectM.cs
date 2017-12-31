@@ -5,9 +5,9 @@ using UnityEngine;
 public class ObjectM : MonoBehaviour
 {
 
-    [SerializeField] float objectSpeed = 1;
+    [SerializeField] float objectSpeed = 5;
     [SerializeField] private float resetPosition = -23.50f;
-    [SerializeField] private float startPosition = 130.00f;
+    [SerializeField] protected float startPosition = 130.00f;
     // Use this for initialization
     void Start()
     {
@@ -25,8 +25,10 @@ public class ObjectM : MonoBehaviour
 
             if (transform.localPosition.x <= resetPosition)
             {
+                // print("test1");
                 Vector3 newPos = new Vector3(startPosition, transform.position.y, transform.position.z);
                 transform.position = newPos;
+                //print("test2");
             }
         }
 

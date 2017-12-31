@@ -39,6 +39,8 @@ public class Player : MonoBehaviour
     {
         if (!GameManager.instance.GameOver && GameManager.instance.GameStarted)
         {
+            rigidBody.isKinematic = false;
+
             if (Input.GetMouseButtonDown(0))
             {
                 GameManager.instance.PlayerStartedGame();
@@ -86,13 +88,18 @@ public class Player : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        print(collision.gameObject.tag);
+        // print(collision.gameObject.tag);
         if (collision.gameObject.tag == "obstacle")
         {
             rigidBody.AddForce(new Vector2(-50, 20), ForceMode.Impulse);
             rigidBody.detectCollisions = false;
             // turn the detection back to false so it can detect again after one collision.
             audioSource.PlayOneShot(sfxDeath);
+            rigidBody.useGravity = false;
+            rigidBody.isKinematic = true;
+            GameManager.instance.PlayerStartedGame();
+
+
 
             GameManager.instance.PlayerCollided();
             //to stop the map stuff when gameOver is true (written as when gameOver is not true, everything move)

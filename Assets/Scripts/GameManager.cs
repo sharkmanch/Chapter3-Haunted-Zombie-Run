@@ -10,12 +10,13 @@ public class GameManager : MonoBehaviour
     // Use this for initialization
 
     [SerializeField] private GameObject mainMenu;
-
+    [SerializeField] private GameObject gameoverMenu;
+    [SerializeField] private GameObject player;
     private bool playerActive = false;
     private bool gameOver = false;
     private bool gameStarted = false;
 
-
+    //off you go
 
     public bool PlayerActive
     {
@@ -50,7 +51,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-
+        //player = GetComponent<GameObject>();
+        //u overrode player by giving it an empty gameObject
     }
 
     // Update is called once per frame
@@ -62,6 +64,8 @@ public class GameManager : MonoBehaviour
     public void PlayerCollided()
     {
         gameOver = true;
+        gameoverMenu.SetActive(true);
+        print("hithit");
     }
 
     public void PlayerStartedGame()
@@ -73,5 +77,24 @@ public class GameManager : MonoBehaviour
     {
         mainMenu.SetActive(false);
         gameStarted = true;
+    }
+    public void OnClick()
+    {
+        if (player.GetComponent<Rigidbody>() != null)
+        {
+            player.GetComponent<Rigidbody>().detectCollisions = true;
+            player.GetComponent<Transform>().position = new Vector3((float)0, (float)2.5, (float)2.5);
+        }
+        gameoverMenu.SetActive(false);
+        instance.gameStarted = true;
+        GameManager.instance.gameOver = false;
+    }
+    public void PlayerEndedGame()
+    {
+        if (gameOver == true)
+        {
+            print("hit");
+            gameoverMenu.SetActive(true);
+        }
     }
 }

@@ -31,7 +31,7 @@ public class Rock : ObjectM
 
             yield return null;
         }
-        //print("hit");
+        print("hit");
 
         yield return new WaitForSeconds(0.5f);
 
