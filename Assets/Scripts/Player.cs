@@ -89,20 +89,29 @@ public class Player : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         // print(collision.gameObject.tag);
+        if (Debug.isDebugBuild)
+        {
+            Debug.Log("Collided with:" + collision.gameObject.tag);
+        }
         if (collision.gameObject.tag == "obstacle")
         {
-            rigidBody.AddForce(new Vector2(-50, 20), ForceMode.Impulse);
-            rigidBody.detectCollisions = false;
+            //rigidBody.AddForce(new Vector2(-50, 20), ForceMode.Impulse);
+            //rigidBody.detectCollisions = false;
             // turn the detection back to false so it can detect again after one collision.
             audioSource.PlayOneShot(sfxDeath);
-            rigidBody.useGravity = false;
-            rigidBody.isKinematic = true;
-            GameManager.instance.PlayerStartedGame();
-
-
-
+            //rigidBody.useGravity = false;
+            //rigidBody.isKinematic = true;
             GameManager.instance.PlayerCollided();
+
+
+
+
             //to stop the map stuff when gameOver is true (written as when gameOver is not true, everything move)
+        }
+        if(collision.gameObject.tag == "platform")
+        {
+            audioSource.PlayOneShot(sfxDeath);
+            GameManager.instance.PlayerCollided();
         }
         // this is to detect if the colliding object is tagged with "obstacle". 
 

@@ -163,47 +163,47 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1156758793713312, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1867663740297486, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1579804187763290, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1576607087282800, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1043607840061178, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1940233383666706, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1224640351387588, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1094367980032610, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1018470794938896, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1566310905764272, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1270990479889530, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
@@ -623,6 +623,10 @@ Prefab:
       propertyPath: m_Name
       value: Rockk (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1546155219301456, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
+      propertyPath: m_TagString
+      value: obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
   m_IsPrefabParent: 0
@@ -763,6 +767,10 @@ Prefab:
       propertyPath: m_Name
       value: Rockk (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1546155219301456, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
+      propertyPath: m_TagString
+      value: obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
   m_IsPrefabParent: 0
@@ -808,6 +816,10 @@ Prefab:
     - target: {fileID: 1546155219301456, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
       propertyPath: m_Name
       value: Rockk (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546155219301456, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
+      propertyPath: m_TagString
+      value: obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
@@ -1244,6 +1256,10 @@ Prefab:
       propertyPath: m_Name
       value: Rockk (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1546155219301456, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
+      propertyPath: m_TagString
+      value: obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
   m_IsPrefabParent: 0
@@ -1282,7 +1298,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 536465055}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 12.1, z: 2.5}
+  m_LocalPosition: {x: 0, y: 15, z: 2.5}
   m_LocalScale: {x: 500, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1753,6 +1769,10 @@ Prefab:
       propertyPath: m_Name
       value: Rockk (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1546155219301456, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
+      propertyPath: m_TagString
+      value: obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
   m_IsPrefabParent: 0
@@ -1948,6 +1968,10 @@ Prefab:
     - target: {fileID: 1546155219301456, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
       propertyPath: m_Name
       value: Rockk (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546155219301456, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
+      propertyPath: m_TagString
+      value: obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
@@ -2309,6 +2333,10 @@ Prefab:
     - target: {fileID: 1546155219301456, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
       propertyPath: m_Name
       value: Rockk (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546155219301456, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
+      propertyPath: m_TagString
+      value: obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
@@ -2690,6 +2718,10 @@ Prefab:
       propertyPath: m_Name
       value: Rockk (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1546155219301456, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
+      propertyPath: m_TagString
+      value: obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
   m_IsPrefabParent: 0
@@ -2936,7 +2968,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1227412985}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -99.5, y: 173.5, z: 0}
+  m_LocalPosition: {x: -99.5, y: 277.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 220463824}
@@ -2944,7 +2976,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -145.5}
+  m_AnchoredPosition: {x: 80, y: -41.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1227412987
@@ -3039,6 +3071,10 @@ Prefab:
     - target: {fileID: 1546155219301456, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
       propertyPath: m_Name
       value: Rockk (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546155219301456, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
+      propertyPath: m_TagString
+      value: obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
@@ -3386,47 +3422,47 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1867663740297486, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1156758793713312, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1579804187763290, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1094367980032610, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1940233383666706, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1566310905764272, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1576607087282800, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1224640351387588, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1043607840061178, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1270990479889530, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1018470794938896, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
@@ -3570,6 +3606,10 @@ Prefab:
       propertyPath: m_Name
       value: Rockk (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1546155219301456, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
+      propertyPath: m_TagString
+      value: obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
   m_IsPrefabParent: 0
@@ -3618,51 +3658,92 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1867663740297486, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1579804187763290, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1156758793713312, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1566310905764272, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1224640351387588, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1270990479889530, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1043607840061178, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1576607087282800, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1094367980032610, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1940233383666706, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1018470794938896, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1541369885
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1541369887}
+  - component: {fileID: 1541369886}
+  m_Layer: 0
+  m_Name: frontblock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1541369886
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541369885}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1541369887
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541369885}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 238.1, y: 2.6, z: -2}
+  m_LocalScale: {x: 500, y: 15, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1615519692
 GameObject:
   m_ObjectHideFlags: 0
@@ -3805,6 +3886,10 @@ Prefab:
       propertyPath: m_Name
       value: Rockk (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1546155219301456, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
+      propertyPath: m_TagString
+      value: obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
   m_IsPrefabParent: 0
@@ -3849,47 +3934,47 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1156758793713312, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1867663740297486, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1579804187763290, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1018470794938896, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1566310905764272, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1094367980032610, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1270990479889530, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1940233383666706, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1224640351387588, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1576607087282800, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 1043607840061178, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
       propertyPath: m_TagString
-      value: obstacle
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 617865c35e8aa904abdfbbb5e9806456, type: 2}
@@ -3904,7 +3989,7 @@ GameObject:
   - component: {fileID: 1692651894}
   m_Layer: 0
   m_Name: Platforms
-  m_TagString: obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4228,6 +4313,10 @@ Prefab:
       propertyPath: m_Name
       value: Rockk (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1546155219301456, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
+      propertyPath: m_TagString
+      value: obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
   m_IsPrefabParent: 0
@@ -4479,6 +4568,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1546155219301456, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
+      propertyPath: m_TagString
+      value: obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bc9feeacf6153b429609c4102aa87c8, type: 2}
   m_IsPrefabParent: 0
@@ -4546,6 +4639,47 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &2101177413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2101177415}
+  - component: {fileID: 2101177414}
+  m_Layer: 0
+  m_Name: backblock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &2101177414
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2101177413}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &2101177415
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2101177413}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 238.1, y: 2.6, z: 6.4}
+  m_LocalScale: {x: 500, y: 15, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2101844025
 Prefab:
   m_ObjectHideFlags: 0

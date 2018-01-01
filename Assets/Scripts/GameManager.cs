@@ -51,6 +51,10 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        if (Debug.isDebugBuild)
+        {
+            Debug.Log("This is debug build");
+        }
         scoreText.SetActive(false);
         //player = GetComponent<GameObject>();
         //u overrode player by giving it an empty gameObject
@@ -59,7 +63,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            PlayerCollided();
+        }
     }
 
     public void PlayerCollided()
@@ -104,8 +111,8 @@ public class GameManager : MonoBehaviour
     {
         if (gameOver == true)
         {
-            print("hit");
             gameoverMenu.SetActive(true);
         }
     }
+    
 }
