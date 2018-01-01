@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject mainMenu;
     [SerializeField] private GameObject gameoverMenu;
     [SerializeField] private GameObject player;
+    [SerializeField] private GameObject scoreText;
     private bool playerActive = false;
     private bool gameOver = false;
     private bool gameStarted = false;
@@ -45,12 +45,13 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        DontDestroyOnLoad(gameObject);
+        //  DontDestroyOnLoad(gameObject);
         Assert.IsNotNull(mainMenu);
     }
 
     void Start()
     {
+        scoreText.SetActive(false);
         //player = GetComponent<GameObject>();
         //u overrode player by giving it an empty gameObject
     }
@@ -65,11 +66,12 @@ public class GameManager : MonoBehaviour
     {
         gameOver = true;
         gameoverMenu.SetActive(true);
-        print("hithit");
+        //print("hithit");
     }
 
     public void PlayerStartedGame()
     {
+
         playerActive = true;
     }
 
@@ -77,6 +79,7 @@ public class GameManager : MonoBehaviour
     {
         mainMenu.SetActive(false);
         gameStarted = true;
+        scoreText.SetActive(true);
     }
     public void OnClick()
     {
@@ -88,7 +91,15 @@ public class GameManager : MonoBehaviour
         gameoverMenu.SetActive(false);
         instance.gameStarted = true;
         GameManager.instance.gameOver = false;
+        Coin.score = 0;
     }
+
+    public void restartGame()
+    {
+        SceneManager.LoadScene("Game");
+    }
+
+
     public void PlayerEndedGame()
     {
         if (gameOver == true)

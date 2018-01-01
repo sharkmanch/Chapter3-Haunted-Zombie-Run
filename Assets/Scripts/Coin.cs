@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Coin : ObjectM
 {
+    static public int score;
     private Rigidbody rigidBody;
     private AudioSource audioSource;
     [SerializeField] private AudioClip sfxCoin;
@@ -12,6 +13,7 @@ public class Coin : ObjectM
     // Use this for initialization
     void Start()
     {
+        score = 0;
         rigidBody = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
     }
@@ -32,7 +34,8 @@ public class Coin : ObjectM
     {
         if (collider.gameObject.tag == "Player")
         {
-
+            Coin.score += 1;
+            print(score);
             //  rigidBody.AddForce(new Vector2(0, 0), ForceMode.Impulse);
             audioSource.PlayOneShot(sfxCoin);
             Vector3 newPos = new Vector3(startPosition, transform.position.y, transform.position.z);
